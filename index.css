@@ -1,0 +1,242 @@
+
+@font-face {
+  font-family: "Jura";
+  src: url(./fonts/Jura/Jura-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Jura_Bold";
+  src: url(./fonts/Jura/Jura-Bold.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: #242424;
+}
+
+.nav_ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 60px;
+}
+
+.nav_a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-family: "Jura";
+}
+
+.nav_li {
+  padding-top: 9px;
+}
+
+.nav_a:hover {
+  color: #ff006a;
+  box-shadow: #ff006a 0px 0px 6px;
+  border: 1px solid #ff006a;
+}
+
+.nav_a:active{
+  color: #91004e;
+  box-shadow: #91004e;
+  border: 1px solid #91004e;
+}
+
+.input {
+  font-family: "Jura";
+  padding: 10px;
+  outline: none;
+  border-radius: 10px;
+  width: 17vw;
+}
+
+.input:focus {
+  outline: none;
+  box-shadow: #ff006a 0px 0px 6px;
+  border: 1px solid #ff006a;
+}
+
+.input:valid {
+  color: #ff006a;
+}
+
+.chast_table {
+  font-family: "Jura";
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 5vh;
+  color: white;
+}
+
+.table {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.img_table {
+  width: 50vw;
+  height: 50vh;
+}
+
+.img_table:hover {
+  box-shadow: #ff006a 0px 0px 6px;
+}
+
+.input:invalid {
+  color: rgb(255, 255, 255);
+}
+
+tr:nth-child(even) {
+  background-color: #242424;
+}
+
+tr:nth-child(odd) {
+  background-color: #91004e;
+}
+
+.tablica:hover {
+  box-shadow: #ff006a 0px 0px 6px;
+}
+
+.text_for_before_and_after {
+  font-family: "Jura";
+  color: white;
+  padding: 10px;
+}
+
+.before {
+  text-align: center;
+}
+
+.text_after{
+    font-size: 20px;
+}
+
+.text_after::selection{
+  background-color: #ff006a;
+  color: white;
+}
+
+.before::before {
+  content: "⚠ ";
+  color: red;
+}
+
+.text_after::after {
+  content: " (Этот дисклеймер предназначен для информирования и не является юридическим документом. Рекомендуется проконсультироваться с юристом для получения профессиональных советов.)";
+  color: #ff006a;
+}
+
+.color{
+    color: #ff006a;
+}
+
+.color::selection{
+  background-color: #ff006a;
+  color: white;
+}
+
+.Attention_H{
+  margin: 0;
+}
+
+.spisok{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Attention_UL{
+  text-decoration: none;
+}
+
+.Attention_LI::marker{
+  content: "⚠ ";
+  color: red;
+}
+
+.div_not_button{
+  display: flex;
+  justify-content: center;
+  font-family: "Jura";
+  gap: 20px;
+  padding: 15px;
+}
+
+button.just_button:not(.n_button) {
+  background-image: url(./img/gray.jpg);
+  transform: scale(1);
+  color:#ff006a;
+  padding: 10px;
+  transition: 1s;
+  color: white;
+  width: 30vw;
+  border-radius: 15px;
+  font-family: "Jura";
+  height: 60vh;
+  border: none;
+  font-size: large;
+}
+
+.n_button{
+  background-image: url(./img/purple.jpg);
+  color: white;
+  font-family: "Jura_Bold";
+  height: 60vh;
+  border: none;
+  font-size: large;
+  padding: 10px;
+  width: 30vw;
+  border-radius: 15px;
+  transition: 1s;
+}
+
+.n_button:hover{
+  transform: scale(1.05);
+  box-shadow: #ff006a 0px 0px 15px;
+}
+
+.Email:has(input:invalid)::after {
+  content: "⚠ ";
+  color: red;
+}
+
+.Email:has(input:valid) {
+  box-shadow: 0 0 10px #91004e;
+}
+
+.Email{
+  border-radius: 10px;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  color: white;
+  padding-bottom: 10px;
+  font-family: "Jura_Bold";
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.input_footer {
+  font-family: "Jura";
+  padding: 10px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  width: 17vw;
+}
+
+
